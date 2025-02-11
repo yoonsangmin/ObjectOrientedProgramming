@@ -38,5 +38,20 @@
     <ClInclude Include="FireChief.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="TraineeFirefighter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FirefighterBase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Administrator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FireStation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="INamedPerson.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
