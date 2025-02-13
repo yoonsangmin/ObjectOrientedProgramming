@@ -2,6 +2,7 @@
 
 #include "Document.h"
 #include "DocumentProcessor.h"
+#include "DocumentProcess.h"
 
 #include "TranslateIntoFrenchProcess.h"
 #include "SpellCheckProcess.h"
@@ -11,10 +12,13 @@
 DocumentProcessor* Configure()
 {
     DocumentProcessor* processor = new DocumentProcessor();
+    processor->AddDocumentProcess(DocumentProcess::TranslateIntoFrench);
+    processor->AddDocumentProcess(DocumentProcess::SpellCheck);
+    processor->AddDocumentProcess(DocumentProcess::Repaginate);
 
-    processor->GetProcesses().emplace_back(new TranslateIntoFrenchProcess);
-    processor->GetProcesses().emplace_back(new SpellcheckProcess);
-    processor->GetProcesses().emplace_back(new RepaginateProcess);
+    //processor->GetProcesses().emplace_back(new TranslateIntoFrenchProcess);
+    //processor->GetProcesses().emplace_back(new SpellcheckProcess);
+    //processor->GetProcesses().emplace_back(new RepaginateProcess);
 
     return processor;
 }
